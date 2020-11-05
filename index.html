@@ -1,0 +1,76 @@
+<!-- Benzon Carlitos Salazar
+	CS381 - Final Project -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Set the viewport so this responsive site displays correctly on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Class Search and Enroll</title>
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+	<form>
+		<h1 style="text-align: center;">
+			UW - Whitewater Course Selection
+			<img src="./images/UWW.jpg" alt="UWW">
+		</h1>
+		<!-- Course List -->
+		<select onclick="displayCoursesList()" class="customSelect" id="category">
+			<option value="">Filter by category...</option>
+			<option value="All">All</option>
+			<option value="coreCourses"> Core Courses</option>
+			<option value="uniqueCourses"> Unique Courses</option>
+			<option value="electiveCourses"> Elective Courses</option>
+			<option value="above300"> 300 or Above Courses</option>
+		</select>
+		<p id="warning" style="text-align: left; font-size: 22px; color: red;"></p>
+		<table class="mainTable">
+			<thead>
+				<tr>
+					<th>Subject</th>
+					<th>Course ID</th>
+					<th>Title</th>
+					<th>Credits</th>
+					<th>Category</th>
+					<th>&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody id="courseList"></tbody>
+		</table>
+		<!-- Shopping cart -->
+		<div id="shoppingcart" style="text-align: center; visibility: hidden;">
+			<h3>Shopping Cart</h3>
+			<table class="mainTable">
+				<thead>
+					<tr>
+						<th>Subject</th>
+						<th>Course ID</th>
+						<th>Title</th>
+						<th>Credits</th>
+						<th>&nbsp;</th>
+					</tr>
+				</thead>
+				<tbody class="cartItems"></tbody>
+			</table>
+			
+			<!-- Summary of the cart -->
+			<p class="cartSummary" style="text-align: left; font-size: 22px;"></p>
+			<p id="totalCredits" style="text-align: left; font-size: 22px;"></p>
+			<h3>Summary</h3>
+			<table class="mainTable">
+				<thead>
+					<tr>
+						<th>Subject</th>
+						<th>Credits</th>
+					</tr>
+				</thead>
+				<tbody class="summaryBody"></tbody>
+			</table>
+		</div>
+		<script src="./index.js"></script>
+	</form>
+</body>
+<footer><em>Benzon Carlitos Salazar - CS381 Final Project</em></footer>
+</html>

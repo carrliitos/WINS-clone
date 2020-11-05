@@ -1,0 +1,47 @@
+table.mainTable, .shoppingcart {
+	font-family: "Times New Roman", Times, serif;
+	background-color: white;
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse;
+}
+img {
+	border-radius: 8px;
+	height: 50px;
+	width: : 50px;
+}
+table.mainTable td, table.mainTable th, .shoppingcart {
+	border: 1px solid #AAAAAA;
+	padding: 3px 2px;
+}
+table.mainTable tbody td, .shoppingcart {
+	font-size: 20px;
+	color: #000000;
+}
+table.mainTable thead, .shoppingcart {
+	background: #801ACD;
+	border-bottom: 0px solid #444444;
+}
+table.mainTable thead th, .shoppingcart {
+	font-size: 25px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-align: center;
+	border-left: 0px solid #D0E4F5;
+}
+table.mainTable thead th:first-child, .shoppingcart {
+	border-left: none;
+}
+table.mainTable tfoot td, .shoppingcart {
+	font-size: 8px;
+}
+table.mainTable tfoot .links, .shoppingcart {
+	text-align: right;
+}
+table.mainTable tfoot .links a, .shoppingcart{
+	display: inline-block;
+	background: #1C6EA4;
+	color: #FFFFFF;
+	padding: 2px 8px;
+	border-radius: 5px;
+}
