@@ -20,9 +20,9 @@ $ cd WINS-clone
 $ <whatever browser> index.html
 ```
 
-![Sample image Homepage](./images/WithFilter.png)
+![Sample image Homepage](./src/images/WithFilter.png)
 
 *With the warning*
-![warning image](./images/warning.png)
+![warning image](./src/images/warning.png)
 
-The JSON courses are embedded into the JavaScript code and are located [here](./index.js#L1)
+The JSON courses are embedded into the JavaScript code and are located [here](./src/index.js#L1)
